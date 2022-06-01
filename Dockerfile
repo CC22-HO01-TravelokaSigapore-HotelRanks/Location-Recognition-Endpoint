@@ -22,6 +22,8 @@ ENV PYTHONUNBUFFERED=1
 
 RUN pip install -r requirements.txt
 
+ENV HOST 0.0.0.0
+
 EXPOSE 8001
 
 CMD ["python", "main.py"]
