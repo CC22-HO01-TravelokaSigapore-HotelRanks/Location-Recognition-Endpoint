@@ -18,6 +18,8 @@ RUN unzip saved_model.zip
 
 RUN rm saved_model.zip
 
+ENV PYTHONUNBUFFERED=1
+
 RUN pip install -r requirements.txt
 
 EXPOSE 8001

@@ -39,7 +39,7 @@ async def predict(req: RequestText, response: Response):
     except Exception as e:
         print(e)
         response.status_code = 500
-        return "Internal Server Error"
+        return {"message" : "Internal Server Error"} 
     
 port = 8001
 print(f"Listening to http://0.0.0.0:{port}")
